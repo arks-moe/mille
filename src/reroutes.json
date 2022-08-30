@@ -28,10 +28,10 @@
     "route": "weapons",
     "src": "https://docs.google.com/spreadsheets/d/1KmIEdm77r_1bRg_tVeRf2NPTYkrQBr4iRa8h7sy52hk/edit?usp=sharing",
     "location": "NGS Weapons Overview"
-  }
+  },
   {
     "route": "classicpse",
     "src": "https://docs.google.com/spreadsheets/d/1Hm-_4sqSr53DPD5-pNT3u0HWfJcEi3qTBrPtIUJc0lU/edit?usp=sharing",
-    "location": "NGS Weapons Overview"
+    "location": "PSO2 PSE Overview"
   }
 ]
