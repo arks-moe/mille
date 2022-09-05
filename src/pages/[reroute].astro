@@ -4,14 +4,11 @@ import reroutes from "src/reroutes.json";
 export function getStaticPaths() {
   return reroutes.map((route) => {
     return {
-      params: { reroute: route.route },
       props: { route }
     }
   });
 }
-
-const { reroute } = Astro.params;
-const { route: { route, src, location } } = Astro.props;
+const { route: { src, location } } = Astro.props;
 
 const title = `Redirecting${location ? ` to ${location}` : ''}... | Mille's Corner`
 const description = location ? `Link to ${location}.` : 'Yet another shortlink...';

@@ -1,0 +1,10 @@
+---
+import SiteLayout from '@layouts/SiteLayout.astro';
+import NewUserGuide from '@layouts/NewUserGuide.astro';
+const title = `NGS New User Guide | Mille's Corner`;
+const description = 'Basic leveling and progression walkthrough for PSO2:NGS.';
+---
+
+<SiteLayout title={title} opengraph={{ description }}>
+  <NewUserGuide />
+</SiteLayout>

@@ -1,33 +1,33 @@
 ---
-import Header from "src/components/Header.astro";
+import Header from 'src/components/Header.astro';
 let { title, opengraph } = Astro.props;
-title ??= `Mille's Corner`
+title ??= `Mille's Corner`;
 
 opengraph ??= {};
-opengraph.title ??= `Mille's Corner`;
+opengraph.title ??= title;
 opengraph.description ??= `Mille's Resource Hub for PSO2:NGS`;
-
 ---
 
 <html lang="en" data-theme="winter">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>{title}</title>
+    <meta property="og:site_name" content="Mille's Corner" />
+    <meta property="og:title" content={opengraph.title} />
+    <meta property="og:description" content={opengraph.description} />
+    <meta property="og:url" content="https://mille.arks.moe" />
 
-  <meta property="og:site_name" content="Mille's Corner">
-  <meta property="og:title" content={opengraph.title} />
-  <meta property="og:description" content={opengraph.description}>
-  <meta property="og:url" content="https://mille.arks.moe" />
+    <meta
+      property="og:image"
+      content="https://mille.arks.moe/default-embed.png"
+    />
+    <meta name="twitter:card" content="summary" />
+  </head>
 
-  <meta property="og:image" content="https://mille.arks.moe/default-embed.png" />
-  <meta name="twitter:card" content="summary">
-</head>
-
-<body>
-  <Header />
-  <slot />
-</body>
-
+  <body>
+    <Header />
+    <slot />
+  </body>
 </html>
