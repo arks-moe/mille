@@ -30,6 +30,11 @@
     "location": "NGS Weapons Overview"
   },
   {
+    "route": "starterguide",
+    "src": "https://docs.google.com/spreadsheets/d/1ndpASWEm3P9f2K3RNfzqE6DzN2q7w9SyzFmyaEpCSco/edit?usp=sharing",
+    "location": "NGS Weapons Overview"
+  },
+  {
     "route": "classicpse",
     "src": "https://docs.google.com/spreadsheets/d/1Hm-_4sqSr53DPD5-pNT3u0HWfJcEi3qTBrPtIUJc0lU/edit?usp=sharing",
     "location": "PSO2 PSE Overview"
