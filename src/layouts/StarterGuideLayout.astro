@@ -1,0 +1,33 @@
+---
+import SiteLayout from './SiteLayout.astro';
+const { frontmatter } = Astro.props;
+const { title, description } = frontmatter;
+import './StarterGuideLayout.css';
+---
+
+<SiteLayout
+  title={frontmatter.title + ` (NGS Starter Guide) | Mille's Corner`}
+  opengraph={{ description }}
+>
+  <div>
+    <div class="prose mx-auto pt-16">
+      <a href="/site/starterguide" class="link-hover">
+        <h1 class="text-center mb-8">NGS Starter Guide</h1>
+      </a>
+      <h2 class="text-center mt-0 mb-4">{frontmatter.title}</h2>
+      <p class="text-center">{frontmatter.description}</p>
+      <hr />
+    </div>
+    <div class="overflow-x-auto px-4 py-16">
+      <slot />
+    </div>
+    <footer class="pb-16 max-w-xl mx-auto">
+      <hr class="py-8" />
+      <div class="flex justify-center">
+        <a href="/site/starterguide" class="btn btn-neutral"
+          >Back to Starter Guide Home</a
+        >
+      </div>
+    </footer>
+  </div>
+</SiteLayout>
