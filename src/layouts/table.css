@@ -1,0 +1,7 @@
+table {
+  @apply table table-zebra mx-auto table-compact shadow-md;
+}
+
+td {
+  @apply whitespace-pre-wrap
+}

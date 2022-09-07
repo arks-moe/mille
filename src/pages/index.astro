@@ -1,6 +1,6 @@
 ---
-import SiteLayout from "@layouts/SiteLayout.astro";
-const title = `Home | Mille's Corner`
+import SiteLayout from '@layouts/SiteLayout.astro';
+const title = `Home | Mille's Corner`;
 ---
 
 <style>
@@ -9,32 +9,43 @@ const title = `Home | Mille's Corner`
   }
 </style>
 
-<SiteLayout title={title} opengraph={{title: 'Spreadsheet Links' }}>
+<SiteLayout title={title} opengraph={{ title: 'Spreadsheet Links' }}>
   <main class="prose mx-auto max-w-3xl py-8 px-4 sm:px-8">
     <section class="card bg-base-200 p-8 md:p-12">
       <h1>Info</h1>
       <p>
-        Hey, Mille here. I made a spreadsheet then I made another then another. Now there's an entire network of them.
+        Hey, Mille here. I made a spreadsheet then I made another then another.
+        Now there's an entire network of them.
       </p>
       <p>
-        My goal is to help players make decisions on gear investment that suits their needs and budget, and help you
-        understand how much damage you're truly dealing compared to someone else. Every spreadsheet below offers plenty
-        of annotations to help you better understand the numbers shown and hopefully make them easier to use.
+        My goal is to help players make decisions on gear investment that suits
+        their needs and budget, and help you understand how much damage you're
+        truly dealing compared to someone else. Every spreadsheet below offers
+        plenty of annotations to help you better understand the numbers shown
+        and hopefully make them easier to use.
       </p>
       <p class="mb-2">
-        If you have any questions, feel free to reach out to me on Twitter (<a href="https://twitter.com/mille_pso2"
-          class="link link-hover link-secondary">@mille_pso2</a>). I'm also technically always <a
-          class="link link-accent" href="/sandbird">recruiting for an alliance as well</a> if that interests you.
+        If you have any questions, feel free to reach out to me on Twitter (<a
+          href="https://twitter.com/mille_pso2"
+          class="link link-hover link-secondary">@mille_pso2</a
+        >). I'm also technically always <a
+          class="link link-accent"
+          href="/sandbird">recruiting for an alliance as well</a
+        > if that interests you.
       </p>
       <h2 class="mb-0">Spreadsheet Links:</h2>
       <ul id="spreadsheet-links">
         <li>
           <h3>Gear Comparisons</h3>
-          <a href="/weapons">Weapons</a> | <a href="/armors">Armor</a> | <a href="/augments">Augments</a>
+          <a href="/weapons">Weapons</a> | <a href="/armors">Armor</a> | <a
+            href="/augments">Augments</a
+          >
         </li>
         <li>
           <h3>Calculators</h3>
-          <a href="/damagecalculator">Damage Calculator</a> | <a href="/enhancement">Enhancement EXP Calculator</a>
+          <a href="/damagecalculator">Damage Calculator</a> | <a
+            href="/enhancement">Enhancement EXP Calculator</a
+          >
         </li>
         <li>
           <h3>Other</h3>
@@ -52,26 +63,34 @@ const title = `Home | Mille's Corner`
     <section class="prose card max-w-full bg-base-200 p-8 md:p-12" id="about">
       <h1 class="">Yo~!</h1>
       <h2 class="mt-0">
-        <a href="https://twitter.com/jojobii_" class="link link-hover link-secondary">@jojobii</a>
+        <a
+          href="https://twitter.com/jojobii_"
+          class="link link-hover link-secondary">@jojobii</a
+        >
         here...
       </h2>
       <p>
-        <a href="https://twitter.com/mille_pso2" class="link link-hover link-secondary">@mille_pso2</a>
-        said it'd be cool to have a more presentable hub for their resources
-        for
-        <em>The Hit Action MMORPG
-          <a href="https://ngs.pso2.com/" class="link link-hover link-accent">Phantasy Star Online 2: New Genesis</a>
+        <a
+          href="https://twitter.com/mille_pso2"
+          class="link link-hover link-secondary">@mille_pso2</a
+        >
+        said it'd be cool to have a more presentable hub for their resources for
+        <em
+          >The Hit Action MMORPG
+          <a href="https://ngs.pso2.com/" class="link link-hover link-accent"
+            >Phantasy Star Online 2: New Genesis</a
+          >
         </em>, so we're working on this together :3
       </p>
-      <p>Typos or suggestions? Reach out to me on Twitter (<a href="https://twitter.com/jojobii_"
-          class="link link-hover link-secondary">@jojobii</a>) or file an Issue on the <a
-          class="link link-hover link-secondary" href="https://github.com/arks-moe/site-mille">GitHub Repo</a>!</p>
+      <p>
+        Typos or suggestions? Reach out to me on Twitter (<a
+          href="https://twitter.com/jojobii_"
+          class="link link-hover link-secondary">@jojobii</a
+        >) or file an Issue on the <a
+          class="link link-hover link-secondary"
+          href="https://github.com/arks-moe/site-mille">GitHub Repo</a
+        >!
+      </p>
     </section>
   </main>
-  <script>
-    const $buttonCopyLink = document.querySelector('button#copy-link');
-    $buttonCopyLink.addEventListener('click', () => {
-      navigator.clipboard.writeText('https://mille.arks-sanctum.com/weapons');
-    });
-  </script>
 </SiteLayout>

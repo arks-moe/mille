@@ -1,16 +1,21 @@
 ---
 import SiteLayout from './SiteLayout.astro';
 const { frontmatter } = Astro.props;
+import './table.css';
 ---
 
 <SiteLayout>
-  <div class="prose mx-auto py-8">
-    <a href="/starterguide" class="link-hover">
-      <h1 class="text-center">NGS Starter Guide</h1>
-    </a>
-    <h2 class="text-center">{frontmatter.title}</h2>
-    <p class="text-center">{frontmatter.description}</p>
-    <hr />
+  <div class="pb-16">
+    <div class="prose mx-auto py-8 px-4">
+      <a href="/starterguide" class="link-hover">
+        <h1 class="text-center">NGS Starter Guide</h1>
+      </a>
+      <h2 class="text-center">{frontmatter.title}</h2>
+      <p class="text-center">{frontmatter.description}</p>
+      <hr />
+    </div>
+    <div class="overflow-x-auto px-4">
+      <slot />
+    </div>
   </div>
-  <slot />
 </SiteLayout>
