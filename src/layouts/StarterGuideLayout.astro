@@ -5,17 +5,25 @@ import './table.css';
 ---
 
 <SiteLayout>
-  <div class="pb-16">
-    <div class="prose mx-auto py-8 px-4">
+  <div>
+    <div class="prose mx-auto pt-16">
       <a href="/starterguide" class="link-hover">
-        <h1 class="text-center">NGS Starter Guide</h1>
+        <h1 class="text-center mb-8">NGS Starter Guide</h1>
       </a>
-      <h2 class="text-center">{frontmatter.title}</h2>
+      <h2 class="text-center mt-0 mb-4">{frontmatter.title}</h2>
       <p class="text-center">{frontmatter.description}</p>
       <hr />
     </div>
-    <div class="overflow-x-auto px-4">
+    <div class="overflow-x-auto px-4 py-16">
       <slot />
     </div>
+    <footer class="pb-16 max-w-xl mx-auto">
+      <hr class="py-8" />
+      <div class="flex justify-center">
+        <a href="/starterguide" class="btn btn-neutral"
+          >Back to Starter Guide Home</a
+        >
+      </div>
+    </footer>
   </div>
 </SiteLayout>
