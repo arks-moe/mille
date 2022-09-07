@@ -1,0 +1,16 @@
+---
+import SiteLayout from './SiteLayout.astro';
+const { frontmatter } = Astro.props;
+---
+
+<SiteLayout>
+  <div class="prose mx-auto py-8">
+    <a href="/starterguide" class="link-hover">
+      <h1 class="text-center">NGS Starter Guide</h1>
+    </a>
+    <h2 class="text-center">{frontmatter.title}</h2>
+    <p class="text-center">{frontmatter.description}</p>
+    <hr />
+  </div>
+  <slot />
+</SiteLayout>
