@@ -8,12 +8,15 @@ const posts = await Astro.glob('./*.mdx'); // returns an array of posts that liv
 
 <SiteLayout title={title} opengraph={{ description }}>
   <div class="prose mx-auto pt-8 pb-16 px-4">
-    <a href="/starterguide" class="link-hover">
-      <h1 class="text-center">NGS Starter Guide</h1>
-    </a>
+    <h1 class="text-center">NGS Starter Guide <i>(WIP)</i></h1>
     <p>
       this is a collection of pages that goes over basic leveling practices and
       gives you some basic tips for the early levels.
+    </p>
+    <p>
+      website adaption of <a href="/starterguide"
+        >new user onboarding/starter guide sheet</a
+      >
     </p>
     <hr />
     <div class="not-prose">
