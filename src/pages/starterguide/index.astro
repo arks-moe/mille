@@ -1,13 +1,13 @@
 ---
 import SiteLayout from '@layouts/SiteLayout.astro';
-const title = `NGS New User Guide | Mille's Corner`;
+const title = `Home (NGS Starter Guide) | Mille's Corner`;
 const description = 'Basic leveling and progression walkthrough for PSO2:NGS.';
 
 const posts = await Astro.glob('./*.mdx'); // returns an array of posts that live at ./src/pages/post/*.md
 ---
 
 <SiteLayout title={title} opengraph={{ description }}>
-  <div class="prose mx-auto py-8 px-4">
+  <div class="prose mx-auto pt-8 pb-16 px-4">
     <a href="/starterguide" class="link-hover">
       <h1 class="text-center">NGS Starter Guide</h1>
     </a>
