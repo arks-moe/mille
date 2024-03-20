@@ -48,5 +48,10 @@
     "location": "Spreadsheet Updates",
     "route": "updates",
     "src": "https://www.tumblr.com/mille-arks-moe"
+  },
+  {
+    "location": "Spreadsheet Updates",
+    "route": "gptree",
+    "src": "https://docs.google.com/spreadsheets/d/1mor2OxARmVBDHsi1CbCaCExg6ItoUc7dKyCSGjyX-3Q/edit?usp=sharing"
   }
 ]
