@@ -53,5 +53,10 @@
     "location": "Global GP Tree Schedule",
     "route": "gptree",
     "src": "https://docs.google.com/spreadsheets/d/1mor2OxARmVBDHsi1CbCaCExg6ItoUc7dKyCSGjyX-3Q/edit?usp=sharing"
+  },
+  {
+    "location": "Dext Base Meseta Farm guide",
+    "route": "dextbase",
+    "src": "https://docs.google.com/document/d/1Au44lkdKyhaDHSLYp0ojVsMpclkRx-aaXJuXBWTahT0/edit?usp=sharing"
   }
 ]
