@@ -63,5 +63,10 @@
     "location": "Common screenshot hashtags",
     "route": "screenshottags",
     "src": "https://docs.google.com/spreadsheets/d/1C8Z5wGSseCo-d_WZXQFPKIUMXOIaHk0MirhO8RgCNF4/edit?usp=sharing"
+  },  
+  {
+    "location": "LC puzzles",
+    "route": "leciel",
+    "src": "https://docs.google.com/spreadsheets/d/1g8azWU6UsZtUXLPQO3lfEfJrpoUUae4LSPHJ5HjDP0g/edit?usp=sharing"
   }  
 ]
